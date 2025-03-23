@@ -1,0 +1,71 @@
+/* General Navigation Styling */
+nav {
+    background-color: #222; /* Darker background for contrast */
+    padding: 20px 0; /* Increased padding for a thicker appearance */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+.home-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+.home-ul li {
+    display: inline-block;
+}
+
+.home-a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px; /* Increased padding for larger clickable area */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    background-color: transparent; /* Ensure no unintended background color */
+    border: none; /* Remove any borders */
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+.home-a h1 {
+    margin: 0; /* Remove default margin from h1 */
+    padding: 0; /* Remove default padding from h1 */
+    font-size: inherit; /* Inherit font size from .home-a */
+    font-weight: inherit; /* Inherit font weight from .home-a */
+}
+
+.home-a:hover {
+    background-color: #555; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    color: #fff; /* Ensure text remains visible */
+}
+
+/* Active Link */
+.active {
+   /* background-color: #007bff; /* Blue active color */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+    color: #fff; /* Ensure text remains visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Reduced spacing for smaller screens */
+    }
+
+    .home-a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px; /* Adjusted padding for mobile */
+    }
+}
